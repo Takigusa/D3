@@ -19,7 +19,7 @@ var data2021 = d3.map();
 var data2022 = d3.map();
 var colorScale = d3.scaleThreshold()
   .domain([0, 7, 104, 423, 6906, 350000])
-  .range(d3.schemeBlues[7]);
+  .range(d3.schemeReds[7]);
 
 // Load external data and boot
 d3.queue()
@@ -44,7 +44,7 @@ function ready(error, topo) {
   console.log(topo)
 
       // Set a timer event to trigger every interval milliseconds
-      let timer = setInterval(animate, 5000) 
+      let timer = setInterval(animate, 2000) 
   
       update()
     
